@@ -10,7 +10,18 @@
   "homepage": "https://echoai.so/api#mcp",
   "repository": "https://github.com/darthdens/echo-mcp-server",
   "license": "MIT",
-  "logo": "assets/logo.svg",
-  "keywords": ["mcp", "ai-agent", "chatbot", "whatsapp", "customer-support", "echo-ai"],
-  "mcpServers": "./.mcp.json"
+  "logo": "assets/echo-pfp-512.png",
+  "keywords": [
+    "mcp",
+    "ai-agent",
+    "chatbot",
+    "whatsapp",
+    "customer-support",
+    "echo-ai"
+  ],
+  "mcpServers": "./.mcp.json",
+  "icons": {
+    "light": "assets/echo-pfp-512.png",
+    "dark": "assets/echo-pfp-dark-512.png"
+  }
 }
