@@ -73,7 +73,6 @@ On first use Cursor registers itself automatically and opens the Echo AI OAuth a
 
 ## Lovable
 
-[![Add to Lovable](https://img.shields.io/badge/Add%20to-Lovable-6D44FF?style=for-the-badge&labelColor=09041A)](https://lovable.dev/dashboard?connectors)
 
 1. Open [Lovable Connectors](https://lovable.dev/dashboard?connectors), scroll to the bottom of the **All** view and pick the **Custom** card labelled **MCP** ("Connect your own MCP").
 2. Server name: `Echo AI`
