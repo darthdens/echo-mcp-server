@@ -125,3 +125,15 @@ Or click the badge above to install with one click.
 ## Reviewer test account
 
 Available on request for directory reviewers. Contact dens@echoai.so.
+
+
+## Brand assets
+
+Profile picture (solid purple square, recommended for directories):
+
+<img src="assets/echo-pfp-512.png" width="128" alt="Echo AI profile logo" />
+
+- `assets/echo-pfp-1024.png`, `512`, `256`, `128`, `64` - purple pfp
+- `assets/echo-pfp-dark-512.png`, `assets/echo-pfp-dark.svg` - dark pfp
+- `assets/echo-pfp-purple.svg`, `assets/echo-pfp-white.svg` - vector pfp
+- `assets/echo-icon-transparent-512.png` - transparent mark only
