@@ -43,23 +43,18 @@ First connection triggers an in-browser approval screen where you sign in to Ech
 }
 ```
 
-## Windsurf
+## Replit
 
-1. Open Windsurf and go to **Settings > Tools > Windsurf Settings > Add Server**.
-2. If Echo AI is not in the template list, click **View raw config** and edit `~/.codeium/mcp_config.json`.
-3. Add the Echo AI entry:
+[![Install on Replit](https://replit.com/badge?caption=Install%20on%20Replit)](https://replit.com/integrations?mcp=eyJkaXNwbGF5TmFtZSI6IkVjaG8gQUkiLCJiYXNlVXJsIjoiaHR0cHM6Ly9hdXRoLmVjaG9haS5zby9mdW5jdGlvbnMvdjEvbWNwIn0=)
 
-```json
-{
-  "mcpServers": {
-    "echo-ai": {
-      "serverUrl": "https://auth.echoai.so/functions/v1/mcp"
-    }
-  }
-}
-```
+To add Echo AI inside Replit Agent:
 
-4. Save and press **Refresh** in the MCP panel. The first time you use a tool, Windsurf opens the Echo AI OAuth approval screen in your browser.
+1. Go to [replit.com/integrations](https://replit.com/integrations) and scroll to **MCP Servers for Replit Agent**.
+2. Click **+ Add MCP server**.
+3. Set **Display name** to `Echo AI` and **MCP Server URL** to `https://auth.echoai.so/functions/v1/mcp`.
+4. Click **Test & save**. Replit will guide you through the Echo AI OAuth approval flow.
+
+Or click the badge above to install with one click.
 
 ## Supported scopes
 
