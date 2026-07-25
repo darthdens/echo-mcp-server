@@ -43,6 +43,47 @@ First connection triggers an in-browser approval screen where you sign in to Ech
 }
 ```
 
+## Cursor
+
+[![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](cursor://anysphere.cursor-deeplink/mcp/install?name=echo-ai&config=eyJ1cmwiOiJodHRwczovL2F1dGguZWNob2FpLnNvL2Z1bmN0aW9ucy92MS9tY3AifQ==)
+
+To add Echo AI in Cursor:
+
+1. Open **Cursor Settings > Tools & MCP > New MCP Server**, or edit `~/.cursor/mcp.json`.
+2. Add the Echo AI entry:
+
+```json
+{
+  "mcpServers": {
+    "echo-ai": {
+      "url": "https://auth.echoai.so/functions/v1/mcp"
+    }
+  }
+}
+```
+
+3. Save and refresh. On first tool call Cursor registers itself automatically and opens the Echo AI OAuth approval screen.
+
+Or click the badge above to install with one click.
+
+## Windsurf
+
+1. Open Windsurf and go to **Settings > Tools > Windsurf Settings > Add Server**.
+2. If Echo AI is not in the template list, click **View raw config** and edit `~/.codeium/mcp_config.json`.
+3. Add the Echo AI entry:
+
+```json
+{
+  "mcpServers": {
+    "echo-ai": {
+      "serverUrl": "https://auth.echoai.so/functions/v1/mcp"
+    }
+  }
+}
+```
+
+4. Save and press **Refresh** in the MCP panel. The first time you use a tool, Windsurf opens the Echo AI OAuth approval screen in your browser.
+
 ## Replit
 
 [![Install on Replit](https://replit.com/badge?caption=Install%20on%20Replit)](https://replit.com/integrations?mcp=eyJkaXNwbGF5TmFtZSI6IkVjaG8gQUkiLCJiYXNlVXJsIjoiaHR0cHM6Ly9hdXRoLmVjaG9haS5zby9mdW5jdGlvbnMvdjEvbWNwIn0=)
