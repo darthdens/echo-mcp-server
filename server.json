@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "so.echoai/echo-ai",
+  "description": "List, configure, chat with, analyse and embed your Echo AI assistants.",
+  "version": "1.0.0",
+  "websiteUrl": "https://echoai.so",
+  "repository": {
+    "url": "https://github.com/darthdens/echo-mcp-server",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://auth.echoai.so/functions/v1/mcp"
+    }
+  ]
+}
