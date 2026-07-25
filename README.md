@@ -95,22 +95,6 @@ Lovable can then read your Echos as live context while you build, for example: "
 
 4. Save and press **Refresh** in the MCP panel. The first time you use a tool, Windsurf opens the Echo AI OAuth approval screen in your browser.
 
-## Lovable
-
-[![Add to Lovable](https://img.shields.io/badge/Add%20to-Lovable-6D44FF?style=for-the-badge&labelColor=09041A)](https://lovable.dev/dashboard?connectors)
-
-To add Echo AI as a chat connector in Lovable:
-
-1. Open [Lovable Connectors](https://lovable.dev/dashboard?connectors), scroll to the bottom of the **All** view and pick the **Custom** card labelled **MCP** ("Connect your own MCP").
-2. Server name: `Echo AI`
-3. Server URL: `https://auth.echoai.so/functions/v1/mcp`
-4. Leave **OAuth** selected, then click **Add & authorize**.
-5. Sign in to Echo AI and choose which Echos to share.
-
-Lovable can then read your Echos as live context while you build, for example: "Using the Echo AI connector, get the embed snippet for my support Echo and add it to this page."
-
-Or click the badge above to open the Lovable connectors page.
-
 ## Supported scopes
 
 - `echos:read` - list Echos, read config, analytics, conversations
