@@ -45,12 +45,11 @@ First connection triggers an in-browser approval screen where you sign in to Ech
 
 ## Cursor
 
+One-click install:
+
 [![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](cursor://anysphere.cursor-deeplink/mcp/install?name=echo-ai&config=eyJ1cmwiOiJodHRwczovL2F1dGguZWNob2FpLnNvL2Z1bmN0aW9ucy92MS9tY3AifQ==)
 
-To add Echo AI in Cursor:
-
-1. Open **Cursor Settings > Tools & MCP > New MCP Server**, or edit `~/.cursor/mcp.json`.
-2. Add the Echo AI entry:
+Manual install: open **Cursor Settings > Tools & MCP > New MCP Server**, or edit `~/.cursor/mcp.json`:
 
 ```json
 {
@@ -62,11 +61,23 @@ To add Echo AI in Cursor:
 }
 ```
 
-3. Save and refresh. On first tool call Cursor registers itself automatically and opens the Echo AI OAuth approval screen.
+On first use Cursor registers itself automatically and opens the Echo AI OAuth approval screen.
 
-Or click the badge above to install with one click.
+## Lovable
+
+[![Add to Lovable](https://img.shields.io/badge/Add%20to-Lovable-6D44FF?style=for-the-badge&labelColor=09041A)](https://lovable.dev/dashboard?connectors)
+
+1. Open [Lovable Connectors](https://lovable.dev/dashboard?connectors), scroll to the bottom of the **All** view and pick the **Custom** card labelled **MCP** ("Connect your own MCP").
+2. Server name: `Echo AI`
+3. Server URL: `https://auth.echoai.so/functions/v1/mcp`
+4. Authentication: leave **OAuth** selected, then click **Add & authorize**.
+5. Sign in to Echo AI and choose which Echos to share.
+
+Lovable can then read your Echos as live context while you build, for example: "Using the Echo AI connector, get the embed snippet for my support Echo and add it to this page."
 
 ## Windsurf
+
+
 
 1. Open Windsurf and go to **Settings > Tools > Windsurf Settings > Add Server**.
 2. If Echo AI is not in the template list, click **View raw config** and edit `~/.codeium/mcp_config.json`.
@@ -84,18 +95,21 @@ Or click the badge above to install with one click.
 
 4. Save and press **Refresh** in the MCP panel. The first time you use a tool, Windsurf opens the Echo AI OAuth approval screen in your browser.
 
-## Replit
+## Lovable
 
-[![Install on Replit](https://replit.com/badge?caption=Install%20on%20Replit)](https://replit.com/integrations?mcp=eyJkaXNwbGF5TmFtZSI6IkVjaG8gQUkiLCJiYXNlVXJsIjoiaHR0cHM6Ly9hdXRoLmVjaG9haS5zby9mdW5jdGlvbnMvdjEvbWNwIn0=)
+[![Add to Lovable](https://img.shields.io/badge/Add%20to-Lovable-6D44FF?style=for-the-badge&labelColor=09041A)](https://lovable.dev/dashboard?connectors)
 
-To add Echo AI inside Replit Agent:
+To add Echo AI as a chat connector in Lovable:
 
-1. Go to [replit.com/integrations](https://replit.com/integrations) and scroll to **MCP Servers for Replit Agent**.
-2. Click **+ Add MCP server**.
-3. Set **Display name** to `Echo AI` and **MCP Server URL** to `https://auth.echoai.so/functions/v1/mcp`.
-4. Click **Test & save**. Replit will guide you through the Echo AI OAuth approval flow.
+1. Open [Lovable Connectors](https://lovable.dev/dashboard?connectors), scroll to the bottom of the **All** view and pick the **Custom** card labelled **MCP** ("Connect your own MCP").
+2. Server name: `Echo AI`
+3. Server URL: `https://auth.echoai.so/functions/v1/mcp`
+4. Leave **OAuth** selected, then click **Add & authorize**.
+5. Sign in to Echo AI and choose which Echos to share.
 
-Or click the badge above to install with one click.
+Lovable can then read your Echos as live context while you build, for example: "Using the Echo AI connector, get the embed snippet for my support Echo and add it to this page."
+
+Or click the badge above to open the Lovable connectors page.
 
 ## Supported scopes
 
@@ -125,15 +139,3 @@ Or click the badge above to install with one click.
 ## Reviewer test account
 
 Available on request for directory reviewers. Contact dens@echoai.so.
-
-
-## Brand assets
-
-Profile picture (solid purple square, recommended for directories):
-
-<img src="assets/echo-pfp-512.png" width="128" alt="Echo AI profile logo" />
-
-- `assets/echo-pfp-1024.png`, `512`, `256`, `128`, `64` - purple pfp
-- `assets/echo-pfp-dark-512.png`, `assets/echo-pfp-dark.svg` - dark pfp
-- `assets/echo-pfp-purple.svg`, `assets/echo-pfp-white.svg` - vector pfp
-- `assets/echo-icon-transparent-512.png` - transparent mark only
