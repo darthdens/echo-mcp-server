@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "echo-ai": {
+      "type": "http",
+      "url": "https://auth.echoai.so/functions/v1/mcp"
+    }
+  }
+}
