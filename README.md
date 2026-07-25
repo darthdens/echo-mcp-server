@@ -43,6 +43,14 @@ First connection triggers an in-browser approval screen where you sign in to Ech
 }
 ```
 
+## Replit
+
+One-click install:
+
+[![Install Echo AI](https://replit.com/badge?caption=Install%20Echo%20AI)](https://replit.com/integrations?mcp=eyJkaXNwbGF5TmFtZSI6IkVjaG8gQUkiLCJiYXNlVXJsIjoiaHR0cHM6Ly9hdXRoLmVjaG9haS5zby9mdW5jdGlvbnMvdjEvbWNwIn0=)
+
+Or open [https://replit.com/integrations?mcp=eyJkaXNwbGF5TmFtZSI6IkVjaG8gQUkiLCJiYXNlVXJsIjoiaHR0cHM6Ly9hdXRoLmVjaG9haS5zby9mdW5jdGlvbnMvdjEvbWNwIn0=](https://replit.com/integrations?mcp=eyJkaXNwbGF5TmFtZSI6IkVjaG8gQUkiLCJiYXNlVXJsIjoiaHR0cHM6Ly9hdXRoLmVjaG9haS5zby9mdW5jdGlvbnMvdjEvbWNwIn0=) and approve the OAuth prompt.
+
 ## Cursor
 
 One-click install:
@@ -75,9 +83,51 @@ On first use Cursor registers itself automatically and opens the Echo AI OAuth a
 
 Lovable can then read your Echos as live context while you build, for example: "Using the Echo AI connector, get the embed snippet for my support Echo and add it to this page."
 
+## Claude
+
+Claude's official Connectors Directory requires a Team or Enterprise organization to list a connector, so Echo AI is not in the directory yet. Individual users can still connect manually through a custom connector.
+
+1. Go to **https://claude.ai/customize/connectors**
+2. Click **+** then **Add custom connector**
+3. Paste the remote MCP server URL: `https://auth.echoai.so/functions/v1/mcp`
+4. Leave **Advanced settings** empty - Echo AI handles OAuth 2.1 and Dynamic Client Registration automatically
+5. Click **Add** and approve the Echo AI OAuth screen to pick which Echos to share
+
+Free users can add one custom connector. Pro and Max users can add more. The same tools and scopes work in Claude.ai, Claude Desktop, Claude Mobile, and Claude Code once connected.
+
+Claude Code users can also run:
+
+```bash
+claude mcp add --transport http echo-ai https://auth.echoai.so/functions/v1/mcp
+```
+
+## ChatGPT
+
+Echo AI is a remote MCP server, so it connects to ChatGPT in developer mode without any local install.
+
+1. In ChatGPT, open **Settings > Security and login** and turn on **Developer mode**.
+2. Open **Settings > Plugins** (or https://chatgpt.com/plugins) and click the **+** button.
+3. Name: `Echo AI`. Description: `Connect your Echo AI assistants, catalog, bookings and analytics.`
+4. MCP server URL: `https://auth.echoai.so/functions/v1/mcp`
+5. Create the connection and approve the Echo AI OAuth screen to pick which Echos to share.
+6. Start a new conversation and enable Echo AI from the tools menu.
+
+Developer mode availability depends on your ChatGPT account and workspace policy. After an Echo AI server update, open the connection and click **Refresh** to pull the new tool metadata.
+
+You can also test the server from the OpenAI API Playground (**Tools > Add > MCP Server**) or the Responses API by passing the same URL as an MCP tool.
+
+## Codex
+
+Add Echo AI to the [Codex CLI](https://github.com/openai/codex) or the ChatGPT IDE extension as a remote MCP server:
+
+```bash
+codex mcp add echo-ai --url https://auth.echoai.so/functions/v1/mcp
+codex mcp login echo-ai
+```
+
+The second command opens the Echo AI OAuth approval screen in your browser. Once approved, Codex can list your Echos and call any of the tools above.
+
 ## Windsurf
-
-
 
 1. Open Windsurf and go to **Settings > Tools > Windsurf Settings > Add Server**.
 2. If Echo AI is not in the template list, click **View raw config** and edit `~/.codeium/mcp_config.json`.
