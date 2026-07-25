@@ -65,9 +65,9 @@ First connection triggers an in-browser approval screen where you sign in to Ech
 - Docs: https://echoai.so/api#mcp
 - Privacy: https://echoai.so/privacy
 - Terms: https://echoai.so/terms
-- Support: support@echoai.so
+- Support: dens@echoai.so
 - Logo pack: https://echoai.so/brand/mcp/echo-mcp-logo-pack.zip
 
 ## Reviewer test account
 
-Available on request for directory reviewers. Contact support@echoai.so.
+Available on request for directory reviewers. Contact dens@echoai.so.
