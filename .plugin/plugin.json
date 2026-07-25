@@ -1,0 +1,16 @@
+{
+  "name": "echo-ai",
+  "version": "1.0.0",
+  "description": "Build, manage and chat with Echo AI assistants (web chat, WhatsApp, Instagram, voice) from any MCP-compatible agent.",
+  "author": {
+    "name": "Echo AI",
+    "email": "dens@echoai.so",
+    "url": "https://echoai.so"
+  },
+  "homepage": "https://echoai.so/api#mcp",
+  "repository": "https://github.com/darthdens/echo-mcp-server",
+  "license": "MIT",
+  "logo": "assets/logo.svg",
+  "keywords": ["mcp", "ai-agent", "chatbot", "whatsapp", "customer-support", "echo-ai"],
+  "mcpServers": "./.mcp.json"
+}
